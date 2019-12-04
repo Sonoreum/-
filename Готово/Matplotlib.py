@@ -36,8 +36,9 @@ plt.legend()
 plt.show()
 
 
+data = np.random.normal(0, 10, 140) # данные для гистограмм
+
 fig3 = plt.figure(figsize = (13,13)) # Первая фигура задание 2 (гистограммы)
-data = np.random.normal(0, 10, 140)
 plt.hist(data, histtype = 'step')
 plt.show()
 
@@ -48,7 +49,7 @@ plt.show()
 
 
 
-x = np.linspace(-10,10, 100)
+x = np.linspace(-10,10, 100) # данные для диаграмм
 
 fig5 = plt.figure(figsize = (13,13))    # Первая фигура задание 3 (диграммы рассеяния)
 y = 1/(1 + math.e**-x)
@@ -78,7 +79,7 @@ plt.show()
 
 fig8 = plt.figure(figsize = (13,13)) #Вторая фигура задание 4 (графики в 3-х мерной системе координат)
 ax = plt.axes(projection = '3d')
-xl = np.linspace(0,50,100)
+xl = np.linspace(-50,50,100)
 yl = np.cos(xl)
 zl = np.cos(yl)
 ax.plot3D(xl,yl,zl, 'blue')
